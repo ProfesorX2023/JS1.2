@@ -7,8 +7,8 @@ function calcularLitros(){
     var cantKm = Number(textoKm);
 
     //Factor para la operación
-    var cantLitros = Math.round((cantKm/8.8),2);
+    var cantLitros = (cantKm/8.8);
 
     var resultado = document.getElementById("textoResultado");
-    resultado.textContent = "Carga "+ cantLitros + "Litros de Combustible";
+    resultado.textContent = "Carga "+ cantLitros.toFixed(2) + "Litros de Combustible";
 }
